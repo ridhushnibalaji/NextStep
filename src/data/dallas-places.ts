@@ -1,3 +1,4 @@
+// type of place that people can find on the map
 export type PlaceType = 'wic' | 'clinic' | 'food' | 'benefits';
 
 export type Place = {
@@ -14,6 +15,8 @@ export type Place = {
 
 export const DALLAS_CENTER = { latitude: 32.78, longitude: -96.8, latitudeDelta: 0.35, longitudeDelta: 0.35 };
 
+// pulled from online sources, sources are listed/cited in each entry
+// done partly myself + ai
 export const DALLAS_PLACES: Place[] = [
   {
     type: 'wic',
@@ -246,5 +249,25 @@ export const DALLAS_PLACES: Place[] = [
     latitude: 32.68911,
     longitude: -96.89063,
     source: 'https://ccsdallas.org',
+  },
+  {
+    type: 'wic',
+    name: 'North Dallas WIC Clinic (Spring Valley)',
+    address: '8202 Spring Valeey Rd',
+    city: 'Dallas, TX 75240',
+    phone: '(214) 670-7200',
+    latitude: 32.93966,
+    longitude: -96.76387,
+    source: 'https://office.texaswic.org/texas/dallas',
+  },
+  {
+    type: 'clinic',
+    name: 'Bluitt-Flowers Health Center (Parkland)',
+    address: '303 E Overton Rd',
+    city: 'Dallas, TX 75216',
+    phone: '(214) 266-4000',
+    latitude: 32.70101,
+    longitude: -96.82051,
+    source: 'https://www.parklandhealth.org/community-clinics',
   },
 ];
